@@ -1,3 +1,4 @@
+// Clase encargada de realizar operaciones CRUD
 package dao;
 
 import conexion.ConexionDB;

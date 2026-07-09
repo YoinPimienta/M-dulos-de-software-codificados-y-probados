@@ -1,3 +1,4 @@
+// Clase encargada de realizar la conexion con MySQL
 package conexion;
 
 import java.sql.Connection;

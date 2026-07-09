@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sicaps</title>
+    <title>Sicaps Web</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 </head>
+
 <body>
 
-    <h1>Sicaps - Registro de Pacientes</h1>
+<div class="container mt-5">
+
+    <h2 class="text-center">
+        Registro de Pacientes
+    </h2>
 
     <form action="PacienteServlet" method="post">
 
-        Nombre:
-        <input type="text" name="nombre">
-        <br><br>
+        <div class="mb-3">
+            <label>Nombre</label>
 
-        Correo:
-        <input type="email" name="correo">
-        <br><br>
+            <input
+                type="text"
+                name="nombre"
+                class="form-control"
+                required>
+        </div>
 
-        Telefono:
-        <input type="text" name="telefono">
-        <br><br>
+        <div class="mb-3">
+            <label>Correo</label>
 
-        <input type="submit" value="Registrar">
+            <input
+                type="email"
+                name="correo"
+                class="form-control"
+                required>
+        </div>
+
+        <div class="mb-3">
+            <label>Telefono</label>
+
+            <input
+                type="text"
+                name="telefono"
+                class="form-control"
+                required>
+        </div>
+
+        <button
+            type="submit"
+            class="btn btn-primary">
+
+            Guardar Paciente
+
+        </button>
 
     </form>
+
+</div>
 
 </body>
 </html>

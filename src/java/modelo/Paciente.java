@@ -1,3 +1,4 @@
+// Modelo que representa la entidad paciente
 package modelo;
 
 public class Paciente {
